@@ -1,0 +1,14 @@
+# when site is built, @stackbit/stackbit-pull fetches the data from CMS and populates 'title', 'baseURL' and 'params' fields
+# The rest of the configuration fields are left untouched. You can add additional Hugo configuration fields as described here: https://gohugo.io/getting-started/configuration/
+# If you want to extend 'params' with additional fields, add them in CMS.title: Stackbit Ampersand Theme
+baseURL: /
+taxonomies:
+  stub: stub
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
